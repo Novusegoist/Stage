@@ -1,0 +1,12 @@
+После шагов 4-5 из README удалите из Assets/Scripts:
+
+  AudioSyncController.cs   (висел на MusicPlayer, но ни разу не вызывался)
+  UIEventFixer.cs          (заплатка: лечила симптом, добавляла второй input module)
+  UIClickableFixer.cs      (заплатка: каждый кадр-старт перебирала все Button/Image)
+  NPCRotation.cs           (заменён логикой в DancingNPC)
+  AnimatedButton.cs        (не используется)
+  ButtonSounds.cs          (не используется)
+  CursorManager.cs         (не используется, ссылался на другой класс паузы)
+  OutlineWhenNear.cs       (не используется; Shader.Find("Standard") в URP даёт розовый материал)
+  PauseMenu.cs             (дубль SimplePauseMenu, нигде не подключён)
+  UnityHelper.cs           (не нужен: проект на Unity 6)
